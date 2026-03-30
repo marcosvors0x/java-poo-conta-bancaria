@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Conta Bancária em Java
 
 Projeto simples em Java para praticar Programação Orientada a Objetos.
