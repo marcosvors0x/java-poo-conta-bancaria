@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 89f7ec0688aa421922fdbb8d178d5cae2201b045
 # Conta Bancária em Java
 
 Projeto simples em Java para praticar Programação Orientada a Objetos.
@@ -31,8 +27,7 @@ Projeto simples em Java para praticar Programação Orientada a Objetos.
 
 ## Autor
 Marcos Vinícius
-<<<<<<< HEAD
-=======
+
 # Sistema de Conta Bancária (POO - Java)
 
 Projeto desenvolvido para praticar Programação Orientada a Objetos em Java.
@@ -52,7 +47,4 @@ Projeto desenvolvido para praticar Programação Orientada a Objetos em Java.
 
 ## Tecnologias
 - Java
->>>>>>> 652abfa07a4714456a6a3f144f24afc2fff38f9f
-=======
-=======
->>>>>>> 89f7ec0688aa421922fdbb8d178d5cae2201b045
+
