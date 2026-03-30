@@ -8,6 +8,7 @@ public class Program {
     public static void main(String[] args) {
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
+    ContaBancaria conta;
 
     System.out.print("Enter account number: ");
     String numeroDaConta = sc.nextLine();
@@ -17,43 +18,28 @@ public class Program {
     char resposta = sc.nextLine().charAt(0);
     if (resposta == 'y') {
         System.out.print("Enter initial deposit value: ");
-        double saldoConta = sc.nextDouble();
-        ContaBancaria conta = new ContaBancaria(numeroDaConta, nomeTitular, saldoConta);
-
-        System.out.println("Account data:");
-        System.out.println(conta);
-
-        System.out.printf("Enter a deposit value: ");
-        double valorDeposito = sc.nextDouble();
-        conta.depositarDinheiro(valorDeposito);
-        System.out.println("Updated account data:");
-        System.out.println(conta);
-
-        System.out.printf("Enter a withdraw value: ");
-        double valorSaque = sc.nextDouble();
-        conta.sacarDinheiro(valorSaque);
-        System.out.println("Updated account data:");
-        System.out.println(conta);
-    }
+        double inicialValorDeposito = sc.nextDouble();
+        conta = new ContaBancaria(numeroDaConta, nomeTitular, inicialValorDeposito);
+    }   
     else {
-        ContaBancaria conta = new ContaBancaria(numeroDaConta, nomeTitular);
-
-        System.out.println("Account data:");
-        System.out.println(conta);
-
-        System.out.printf("Enter a deposit value: ");
-        double valorDeposito = sc.nextDouble();
-        conta.depositarDinheiro(valorDeposito);
-        System.out.println("Updated account data:");
-        System.out.println(conta);
-
-        System.out.printf("Enter a withdraw value: ");
-        double valorSaque = sc.nextDouble();
-        conta.sacarDinheiro(valorSaque);
-        System.out.println("Updated account data:");
-        System.out.println(conta);
-
+        conta = new ContaBancaria(numeroDaConta, nomeTitular);
     }
+   
+    System.out.println("Account data:");
+    System.out.println(conta);
+
+    System.out.printf("Enter a deposit value: ");
+    double valorDeposito = sc.nextDouble();
+    conta.depositarDinheiro(valorDeposito);
+    System.out.println("Updated account data:");
+    System.out.println(conta);
+
+    System.out.printf("Enter a withdraw value: ");
+    double valorSaque = sc.nextDouble();
+    conta.sacarDinheiro(valorSaque);
+    System.out.println("Updated account data:");
+    System.out.println(conta);
+    
     sc.close();
     }
 }
